@@ -1,0 +1,37 @@
+import java.io.*;
+
+import javax.xml.parsers.DocumentBuilder;
+import javax.xml.parsers.DocumentBuilderFactory;
+import javax.xml.parsers.ParserConfigurationException;
+
+import org.w3c.dom.Document;
+import org.xml.sax.SAXException;
+
+public class TestXml {
+	
+	public static void main(String[] args)
+	{
+		File f=new File("temp.txt");
+		
+		DocumentBuilderFactory dbf=DocumentBuilderFactory.newInstance();
+		DocumentBuilder db=null;
+		try {
+			db = dbf.newDocumentBuilder();
+		} catch (ParserConfigurationException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+		Document doc=null;
+		try {
+			doc = db.parse(f);
+		} catch (SAXException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		} catch (IOException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+		doc.getDocumentElement().normalize();
+		
+	}
+}

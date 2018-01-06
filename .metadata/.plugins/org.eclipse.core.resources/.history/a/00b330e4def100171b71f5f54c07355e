@@ -1,0 +1,9 @@
+
+public class StringComparator {
+
+	
+	public boolean compar(String a,String b)
+	{
+		return a.equals(b);
+	}
+}

@@ -1,0 +1,8 @@
+package FuitsMarket;
+
+public class Market {
+
+	private HashMap<String,Integer> Stock;
+	
+	
+}

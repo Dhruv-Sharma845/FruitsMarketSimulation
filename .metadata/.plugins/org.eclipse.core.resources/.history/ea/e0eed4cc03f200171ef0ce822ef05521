@@ -1,0 +1,43 @@
+import java.io.*;
+public class FileStreamTest {
+
+	public static void main(String[] args)
+	{
+		byte[] bw= {11,20,5,7};
+		
+		FileOutputStream fos=null;
+		try {
+			fos=new FileOutputStream("test.txt");
+			/*for(byte b:bw)
+			{
+				fos.write(b);
+			}*/
+			fos.write(bw);
+		fos.close();
+		} catch (FileNotFoundException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		} catch (IOException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+		
+		try {
+			FileInputStream fis=new FileInputStream("test.txt");
+			int sz=fis.available();
+			
+			for(int i=0;i<sz;i++)
+			{
+				System.out.println((char)fis.read());
+			}
+			fis.close();
+		} catch (FileNotFoundException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		} catch (IOException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+		
+	}
+}

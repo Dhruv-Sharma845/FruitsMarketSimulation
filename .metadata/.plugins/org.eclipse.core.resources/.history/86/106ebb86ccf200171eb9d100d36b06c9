@@ -1,0 +1,13 @@
+package FuitsMarket;
+
+public class Farmer implements Runnable{
+	
+	public Farmer()
+	{
+		
+	}
+	public void run()
+	{
+		
+	}
+}

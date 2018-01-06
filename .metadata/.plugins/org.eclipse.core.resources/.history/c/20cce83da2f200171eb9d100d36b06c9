@@ -1,0 +1,7 @@
+package Telephone;
+
+public class TelephoneDefinition implements TelephoneInterface{
+
+	@Override
+	public void 
+}

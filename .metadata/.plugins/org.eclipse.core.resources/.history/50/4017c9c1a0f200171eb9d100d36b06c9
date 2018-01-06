@@ -1,0 +1,6 @@
+package ThreadJoinTest;
+
+public class ResultData {
+
+	int res=0;
+}

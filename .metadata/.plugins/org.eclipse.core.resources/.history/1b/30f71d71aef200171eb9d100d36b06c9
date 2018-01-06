@@ -1,0 +1,16 @@
+package FuitsMarket;
+
+import java.util.HashMap;
+
+public class Market {
+
+	private HashMap<String,Integer> Stock;
+	private int capacity;
+	private int remSpace;
+	
+	public synchronised void sellTo()
+	{
+		
+	}
+	
+}

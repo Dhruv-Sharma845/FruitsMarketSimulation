@@ -1,0 +1,11 @@
+package ThreadJoinTest;
+
+public class TestThreadJoin {
+
+	public static void main(String[] args)
+	{
+		MyThread1 mt1=new MyThread1();
+		
+		MyThread2 mt2
+	}
+}

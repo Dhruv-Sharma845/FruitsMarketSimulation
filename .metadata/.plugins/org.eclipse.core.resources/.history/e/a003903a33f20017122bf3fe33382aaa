@@ -1,0 +1,10 @@
+package Telephone;
+
+public class MobileTelephone {
+
+	public List<HistoryRecord> callHistory()
+	{
+		
+	}
+	
+}

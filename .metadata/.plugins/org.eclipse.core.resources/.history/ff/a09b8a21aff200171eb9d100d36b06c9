@@ -1,0 +1,30 @@
+package FuitsMarket;
+
+import java.util.HashMap;
+
+public class Market {
+
+	private HashMap<String,Integer> Stock;
+	private int capacity;
+	private int remSpace;
+	
+	public Market(int _cap)
+	{
+		capacity = _cap;
+		remSpace = _cap;
+		
+		Stock=new HashMap<String,Integer>();
+		Stock.put("apple", 0);
+		Stock.put("banana",0);
+		Stock.put();
+	}
+	public synchronized void sellTo(HashMap<String,Integer> sellingBag)
+	{
+		
+	}
+	public synchronized void purchaseFrom(HashMap<String,Integer> purchasingBag)
+	{
+		
+	}
+	
+}

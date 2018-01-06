@@ -1,0 +1,16 @@
+package ThreadJoinTest;
+
+public class MyThread2 implements Runnable{
+
+	private Object prevThreadRes;
+	
+	public MyThread2(Object _prevThreadRes)
+	{
+		prevThreadRes=_prevThreadRes;
+	}
+	public void run()
+	{
+		int result2=prevThreadRes*3;
+		System.out.println("Result from Thread 2: "+result2);
+	}
+}

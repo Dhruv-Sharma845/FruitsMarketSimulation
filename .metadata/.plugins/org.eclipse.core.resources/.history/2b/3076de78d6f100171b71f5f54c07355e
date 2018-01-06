@@ -1,0 +1,16 @@
+import java.lang.*;
+import java.util.*;
+
+
+public class Employee {
+	private int ID;
+	private String Name;
+	private Address add;
+	
+	public Employee(int _ID,String _Name,Address _add) throws CloneNotSupportedException
+	{
+		this.ID = _ID;
+		this.Name = _Name;
+		this.add = (Address) _add.clone();
+	}
+}

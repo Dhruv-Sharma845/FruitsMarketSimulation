@@ -1,0 +1,9 @@
+package ThreadJoinTest;
+
+public class TestThreadJoin {
+
+	public static void main(String[] args)
+	{
+		
+	}
+}

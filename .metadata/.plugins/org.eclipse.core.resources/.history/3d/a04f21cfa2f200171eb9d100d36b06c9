@@ -1,0 +1,10 @@
+package Telephone;
+
+public interface TelephoneInterface {
+	
+	public void call();
+	public void abort();
+	public void pressButton(int value);
+	public void startRecordVoice();
+	public void endRecordVoice();
+}

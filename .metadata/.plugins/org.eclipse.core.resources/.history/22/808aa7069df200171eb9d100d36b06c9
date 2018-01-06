@@ -1,0 +1,14 @@
+package ThreadJoinTest;
+
+public class MyThread1 implements Runnable{
+
+	public void run(Object cArea)
+	{
+		cArea=(Integer)5*3;
+		System.out.println("Result from thread 1 :" + result1);
+	}
+	public int getResult()
+	{
+		return result1;
+	}
+}

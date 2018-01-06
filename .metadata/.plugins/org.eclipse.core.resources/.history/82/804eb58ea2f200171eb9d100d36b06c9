@@ -1,0 +1,10 @@
+package Telephone;
+
+public class TelephoneDefinition implements TelephoneInterface{
+
+	@Override
+	public void startrecordVoice()
+	{
+		System.out.println("Voice recording has been started.");
+	}
+}

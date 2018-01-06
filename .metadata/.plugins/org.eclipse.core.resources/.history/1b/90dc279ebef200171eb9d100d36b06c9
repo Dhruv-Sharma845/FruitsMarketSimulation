@@ -1,0 +1,16 @@
+package FuitsMarket;
+
+import java.util.concurrent.ThreadLocalRandom;
+
+public class TestMarketSimulation {
+	
+	public static void main(String[] args)
+	{
+		int randomNum = ThreadLocalRandom.current().nextInt(0, 2);
+		
+		if(randomNum == 0)
+		{
+			
+		}
+	}
+}

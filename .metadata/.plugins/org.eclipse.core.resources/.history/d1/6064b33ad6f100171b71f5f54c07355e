@@ -1,0 +1,14 @@
+
+public class Address {
+
+	private String StreetNo;
+	private String City;
+	private String State;
+	
+	public Address(String _st,String _c,String _s)
+	{
+		this.StreetNo = _st;
+		this.City = _c;
+		this.State = _s;
+	}
+}

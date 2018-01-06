@@ -1,0 +1,28 @@
+import java.util.*;
+
+public class CollectionsTest {
+
+	public static void main(String[] args)
+	{
+		List<String> list = new ArrayList<String>();
+		list.add("abc");
+		list.add("def");
+		list.add("ghi");
+		
+		display(list);
+		
+		Collections.reverse(list);
+		
+		display(list);
+		
+	}
+	public static void display(List<String> list)
+	{
+		Iterator it=list.iterator();
+		
+		while(it.hasNext())
+		{
+			System.out.print(it.next()+ "  ");
+		}
+	}
+}

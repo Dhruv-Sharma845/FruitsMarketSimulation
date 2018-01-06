@@ -1,0 +1,7 @@
+package Telephone;
+
+public interface TelephoneInterface {
+	
+	public void call();
+	public void pressButton();
+}

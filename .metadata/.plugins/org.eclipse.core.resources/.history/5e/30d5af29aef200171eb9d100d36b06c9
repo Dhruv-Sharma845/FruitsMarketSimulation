@@ -1,0 +1,8 @@
+package FuitsMarket;
+
+public class Market {
+
+	private int[] Stock;
+	
+	
+}

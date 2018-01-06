@@ -1,0 +1,11 @@
+import java.lang.reflect.*;
+
+public class TestCustomAnno {
+	
+	Hello h=new Hello();
+	
+	Method m=h.getClass().getMethod("sayHello");
+	MyAnnotation manno= m.getAnnotation(AyAnnotation.class);
+	System.out.println("Value is: "+manno.value());
+
+}

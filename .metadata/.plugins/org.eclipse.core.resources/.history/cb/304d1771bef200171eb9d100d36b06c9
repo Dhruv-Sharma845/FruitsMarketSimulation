@@ -1,0 +1,9 @@
+package FuitsMarket;
+
+public class TestMarketSimulation {
+	
+	public static void main(String[] args)
+	{
+		int randomNum = ThreadLocalRandom.current().nextInt(min, max + 1);
+	}
+}

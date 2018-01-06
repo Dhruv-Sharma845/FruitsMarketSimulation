@@ -1,0 +1,14 @@
+package ThreadJoinTest;
+
+public class TestThreadJoin {
+
+	public static void main(String[] args)
+	{
+		MyThread1 mt1=new MyThread1();
+		Thread t1=new Thread(mt1);
+		t1.start();
+		
+		
+		MyThread2 mt2
+	}
+}

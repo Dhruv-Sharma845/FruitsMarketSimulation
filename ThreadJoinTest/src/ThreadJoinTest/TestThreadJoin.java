@@ -1,0 +1,28 @@
+package ThreadJoinTest;
+
+public class TestThreadJoin {
+	
+	public static void main(String[] args)
+	{
+		ResultData commonArea=new ResultData();
+		
+		MyThread1 mt1=new MyThread1(commonArea);
+		Thread t1=new Thread(mt1);
+		t1.start();
+		
+		
+		try {
+			t1.join();
+		}
+		catch (InterruptedException e) {
+			e.printStackTrace();
+		}
+		//System.out.println((Integer)commonArea);
+		
+		MyThread2 mt2=new MyThread2(commonArea);
+		Thread t2=new Thread(mt2);
+		t2.start();
+		
+		System.out.println(commonArea.res);
+	}
+}

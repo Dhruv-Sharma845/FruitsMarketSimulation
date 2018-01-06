@@ -1,0 +1,8 @@
+import java.lang.reflect.*;
+public class TestCustomAnno {
+	
+	Hello h=new Hello();
+	
+	h.getClass().getMethod()
+
+}

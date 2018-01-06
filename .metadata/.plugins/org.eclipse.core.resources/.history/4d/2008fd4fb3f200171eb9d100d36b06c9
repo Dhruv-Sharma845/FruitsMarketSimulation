@@ -1,0 +1,51 @@
+package FuitsMarket;
+
+import java.util.HashMap;
+import java.util.Map;
+
+public class Market {
+
+	private HashMap<String,Integer> Stock;
+	private int capacity;
+	private int remSpace;
+	
+	public Market(int _cap)
+	{
+		capacity = _cap;
+		remSpace = _cap;
+		
+		Stock=new HashMap<String,Integer>();
+	}
+	public synchronized void sellTo(HashMap<String,Integer> sellingBag)
+	{
+		bool available;
+		int tempSum=capacity;
+		while((tempSum+remSpace) > capacity)
+		{
+			
+			for(Map.Entry<String, Integer> entry : sellingBag.entrySet())
+			{
+				tempSum +=entry.getValue();
+			
+			}
+			if((tempSum+remSpace) > capacity)
+			{
+				wait();
+			}
+			else
+				break;
+		}
+		for(Map.Entry<String, Integer> entry : sellingBag.entrySet())
+		{
+			if(Stock.containsKey(entry.getKey()))
+			{
+			}
+			}
+		}
+	}
+	public synchronized void purchaseFrom(HashMap<String,Integer> purchasingBag)
+	{
+		
+	}
+	
+}

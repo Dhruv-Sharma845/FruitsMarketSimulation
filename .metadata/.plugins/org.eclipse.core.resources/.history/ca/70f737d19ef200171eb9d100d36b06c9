@@ -1,0 +1,15 @@
+package ThreadJoinTest;
+
+public class MyThread1 implements Runnable{
+
+	Object commonArea;
+	public MyThread1(Object _cArea)
+	{
+		commonArea=_cArea;
+	}
+	public void run()
+	{
+		commonArea=Integer.valueOf(5*3);
+		System.out.println("Result from thread 1 :" + commonArea.intValue());
+	}
+}

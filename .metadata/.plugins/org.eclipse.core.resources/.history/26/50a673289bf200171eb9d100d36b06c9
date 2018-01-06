@@ -1,0 +1,10 @@
+package ThreadJoinTest;
+
+public class MyThread1 implements Runnable{
+
+	public void run()
+	{
+		int result1=5*3;
+		System.out.println("Result from thread 1 :" + result1);
+	}
+}
